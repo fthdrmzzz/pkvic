@@ -410,13 +410,11 @@ with configs.ner.ner_ontonotes_bert.open(encoding='utf8') as f:
                     if curwordcache != '':
                         hitfullwordslist.append(curwordcache)
                         curwordcache = ''
-=
             for onetagword in hitfullwordslist:
                 if onetagword.lower() == curlabel.lower():
                     curHIT = True
                     print(curcve, curlabel, str(curRTN))
                     totalcvehitset.add(curcve)
-=
         if curHIT:
             totalhit += 1
         print(totalhit, totalnum, round(totalhit / totalnum, 2))

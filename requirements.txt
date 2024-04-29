@@ -1,0 +1,9 @@
+cpe==1.2.1
+datasketch
+deeppavlov
+elasticsearch
+numpy
+spacy
+textacy
+tldextract
+tqdm
